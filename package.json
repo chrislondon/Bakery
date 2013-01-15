@@ -1,6 +1,6 @@
 {
 	"name": "bakery",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Command line tools for developing PieJS applications",
 
 	"bin": "bin/bakery",
@@ -18,6 +18,7 @@
 	"dependencies": {
 		"adm-zip": "0.1.x",
 		"connect": "2.7.x",
+		"findup-sync": "0.1.x",
 		"glob": "3.1.x",
 		"node-minify": "0.7.x",
 		"request": "2.12.x",

@@ -26,6 +26,8 @@ _(More documentation coming)_
 
 Run `bakery bake apple pie` to create pie application
 
+Run `bakery server` to create static server
+
 ## Installing bakery
 
 Bakery is available as an [npm][npm] module. If you install bakery globally via `npm install -g bakery`, it will be available for use in all of your projects. Once bakery has been installed, you can type `bakery --help` at the command line for more information. And if you want to see bakery "bakery" itself, cd into bakery's directory and type `bakery`
