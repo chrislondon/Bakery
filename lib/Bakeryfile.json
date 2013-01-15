@@ -27,7 +27,8 @@
 	],
 
 	"minify": {
-		"tmpDir": "/tmp",
+		"type": "yui-js",
+		"tmpDir": "/tmp/",
 		"files": [
 			{
 				"in": "webroot/js/app.js",
