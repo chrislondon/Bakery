@@ -1,0 +1,38 @@
+{
+	"name": "bakery",
+	"version": "0.0.3",
+	"description": "Command line tools for developing PieJS applications",
+
+	"bin": "bin/bakery",
+	"main": "lib/bakery.js",
+
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chrislondon/Bakery.git"
+	},
+
+	"dependencies": {
+		"adm-zip": "0.1.x",
+		"connect": "2.7.x",
+		"glob": "3.1.x",
+		"node-minify": "0.7.x",
+		"request": "2.12.x",
+		"watch": "0.5.x"
+	},
+
+	"keywords": [
+		"bakery",
+		"pie",
+		"piejs",
+		"dependencies"
+	],
+
+	"author": "Chris London",
+	"license": "BSD",
+	"readmeFilename": "README.md",
+	"gitHead": "83d4f81fed376c48a0997cb893ef0555876bd811"
+}

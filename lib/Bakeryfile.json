@@ -1,0 +1,61 @@
+{
+	"bake": {
+		"pie": {
+			"subdir": "PieJS-{branch}/",
+			"url": "https://github.com/chrislondon/PieJS/archive/{branch}.zip"
+		}
+	},
+
+	"concat": [
+		{
+			"in": "App/**/*.js",
+			"out": "webroot/js/app.js",
+			"require": true
+		},{
+			"in": "Lib/PieJS/src/**/*.js",
+			"out": "webroot/js/pie.js",
+			"require": true
+		},{
+			"in": "Lib/Handlebars/**/*.js",
+			"out": "webroot/js/handlebars.js",
+			"require": false
+		},{
+			"in": "Lib/Metamorph/**/*.js",
+			"out": "webroot/js/metamorph.js",
+			"require": false
+		}
+	],
+
+	"minify": {
+		"tmpDir": "/tmp",
+		"files": [
+			{
+				"in": "webroot/js/app.js",
+				"out": "webroot/js/app.min.js"
+			},{
+				"in": "webroot/js/pie.js",
+				"out": "webroot/js/pie.min.js"
+			},{
+				"in": "webroot/js/handlebars.js",
+				"out": "webroot/js/handlebars.min.js"
+			},{
+				"in": "webroot/js/metamorph.js",
+				"out": "webroot/js/metamorph.min.js"
+			}
+		]
+	},
+
+	"server": {
+		"webroot": "webroot",
+		"port": 8080
+	},
+
+	"watch": {
+		"path": "App"
+	},
+
+	"views": [
+		"App/View/**/*.html",
+		"Lib/PieJS/src/View/**/*.html"
+	]
+}

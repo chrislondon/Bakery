@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+// Nodejs libs.
+var fs   = require('fs');
+var path = require('path');
+
+// In Nodejs 0.8.0, existsSync moved from path -> fs.
+var existsSync = fs.existsSync || path.existsSync;
+
+// Awesome internal bakery lib.
+var findup = require('findup-sync');
+
+// Where might a locally-installed bakery live?
+var dir = path.resolve(findup('Bakefile'), '../node_modules/bakery');
+
+// If bakery is installed locally, use it. Otherwise use this bakery.
+if (!existsSync(dir)) { dir = '../lib/bakery'; }
+
+dir = '../lib/bakery';
+
+// Run bakery.
+require(dir).cli();
