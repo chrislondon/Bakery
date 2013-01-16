@@ -8,19 +8,19 @@
 
 	"concat": [
 		{
-			"in": "App/**/*.js",
+			"in": "app/**/*.js",
 			"out": "webroot/js/app.js",
 			"require": true
 		},{
-			"in": "Lib/PieJS/src/**/*.js",
+			"in": "lib/**/*.js",
 			"out": "webroot/js/pie.js",
 			"require": true
 		},{
-			"in": "Lib/Handlebars/**/*.js",
+			"in": "vendor/handlebars*.js",
 			"out": "webroot/js/handlebars.js",
 			"require": false
 		},{
-			"in": "Lib/Metamorph/**/*.js",
+			"in": "vendors/metamorph.js",
 			"out": "webroot/js/metamorph.js",
 			"require": false
 		}
@@ -52,11 +52,11 @@
 	},
 
 	"watch": {
-		"path": "App"
+		"path": "app"
 	},
 
 	"views": [
-		"App/View/**/*.html",
-		"Lib/PieJS/src/View/**/*.html"
+		"app/View/**/*.html",
+		"lib/View/**/*.html"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"name": "bakery",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Command line tools for developing PieJS applications",
 
 	"bin": "bin/bakery",
